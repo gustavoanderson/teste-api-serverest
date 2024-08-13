@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx run cy:run",
     "start": "npx serverest",
-    "cy:run": "npx cypress run"
+    "cy:run": "npx cypress run",
+    "cy:run-ci": "start-server-and-test start http://localhost:3000/ test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.6.0",
-    "joi": "^17.13.3"
+    "joi": "^17.13.3",
+    "start-server-and-test": "^2.0.5"
   }
 }
