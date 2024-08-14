@@ -7,7 +7,7 @@
     "test": "npx run cy:run",
     "start": "npx serverest",
     "cy:run": "npx cypress run",
-    "cy:run-ci": "start-server-and-test start http://localhost:3000/ cy:run"
+    "cy:run-ci": "start-server-and-test start http://localhost:3000/ test"
   },
   "keywords": [],
   "author": "",
